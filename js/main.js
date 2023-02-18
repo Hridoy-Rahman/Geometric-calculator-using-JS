@@ -15,3 +15,11 @@ document.getElementById('rectangle-calculate').addEventListener('click',function
     const rectangleArea = rectangleHeight * rectangleWidth;
     console.log(rectangleArea);
 })
+// parallelogram Area
+document.getElementById('parallelogram-calculate').addEventListener('click',function(){
+    const parallelogramBredth=getInputElementById('parallelogram-width');
+    const parallelogramHeight=getInputElementById('parallelogram-height');
+    const parallelogramArea = parallelogramBredth * parallelogramHeight;
+    console.log(parallelogramArea);
+})
+
