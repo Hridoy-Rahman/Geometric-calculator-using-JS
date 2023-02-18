@@ -38,3 +38,12 @@ document.getElementById('pentagon-calculate').addEventListener('click',function(
     const pentagonArea = 0.5 * pentagonP * pentagonB;
     console.log(pentagonArea);
 })
+// Ellipse
+document.getElementById('ellipse-calculate').addEventListener('click',function(){
+    const pi=3.14;
+    const ellipseA=getInputElementById('ellipse-a');
+    const ellipseB=getInputElementById('ellipse-b');
+    const ellipseArea = pi * ellipseA * ellipseB;
+    console.log(ellipseArea);
+})
+
