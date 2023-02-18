@@ -8,3 +8,10 @@ document.getElementById('triangle-calculate').addEventListener('click',function(
     
 })
 
+// Rectangle Area
+document.getElementById('rectangle-calculate').addEventListener('click',function(){
+    const rectangleWidth=getInputElementById('rectangle-width');
+    const rectangleHeight=getInputElementById('rectangle-height');
+    const rectangleArea = rectangleHeight * rectangleWidth;
+    console.log(rectangleArea);
+})
