@@ -6,22 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-     <!-- Tailwind Link  -->
-     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="text-center text-xl w-1/2 mx-auto p-3 border-2 rounded mt-5">
-        <h1 class="">What is DOM and What is the purpose of using DOM</h1>
+    <div class="w-1/2 mx-auto p-3 border-2 rounded mt-5">
+        <h1 class="text-xl text-center mb-4">What is DOM and What is the purpose of using DOM ?</h1>
+        <p>Answer : The Full meaning of DOM is Document Object Model. It represents the document as object. The purpose
+            of using DOM:
+        <ul class="list-disc pl-4 ml-4 mt-3">
+            <li>To access the element of html</li>
+            <li>To get,Set and remove classes</li>
+            <li>To manipulate remove and update styles</li>
+        </ul>
+        </p>
     </div>
-    <div class="text-center text-xl w-1/2 mx-auto p-3 border-2 rounded mt-5">
-        <h1>How will you select HTML elements using DOM? Name the DOM methods.</h1>
+    <div class="w-1/2 mx-auto p-3 border-2 rounded mt-5">
+        <h1 class="text-xl text-center mb-4">How will you select HTML elements using DOM? Name the DOM methods.</h1>
+        <p>We can select HTML element using DOM methods. The way of selecting HTML element is document.DOM-selector("id")</p><br>
+        <p>
+            Name of the DOM Methods:
+        <ol class="list-decimal pl-4 mt-3">
+            <li>getElementById()</li>
+            <li>getElementsByClassName()</li>
+            <li>getElementsByTagName()</li>
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+        </ol>
+        </p>
     </div>
-    <div class="text-center text-xl w-1/2 mx-auto p-3 border-2 rounded mt-5">
-        <h1>What is event bubble?</h1>
+    <div class="w-1/2 mx-auto p-3 border-2 rounded mt-5">
+        <h1 class="text-xl text-center mb-4">What is event bubble?</h1>
+        <p>Event bubble is a term of DOM.When an element receives an event like click,to blur,to scroll etc then it happens.It bubbles up to its parent and grandparent untill it gets its root element,when it happens.The representation on an event bubble looks like a tree.</p>
     </div>
-    <div class="text-center text-xl w-1/2 mx-auto p-3 border-2 rounded mt-5">
-        <h1>What is a callback function and why will you use it?</h1>
+    <div class=" w-1/2 mx-auto p-3 border-2 rounded mt-5">
+        <h1 class="text-xl text-center mb-4">What is a callback function and why will you use it?</h1>
+        <p>A function that passed as an arguement of another function is called callback function.This function executes after the main function's execution.</p>
     </div>
 
     <script src="js/blog.js"></script>

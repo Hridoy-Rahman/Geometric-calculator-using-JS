@@ -68,6 +68,7 @@ document.getElementById('pentagon-calculate').addEventListener('click',function(
     displayData(name,area,)
 
 })
+
 // Ellipse
 document.getElementById('ellipse-calculate').addEventListener('click',function(){
     const pi=3.14;
