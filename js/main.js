@@ -22,4 +22,19 @@ document.getElementById('parallelogram-calculate').addEventListener('click',func
     const parallelogramArea = parallelogramBredth * parallelogramHeight;
     console.log(parallelogramArea);
 })
+// Rhombus Area
 
+document.getElementById('rhombus-calculate').addEventListener('click',function(){
+    const rhombusCorner1=getInputElementById('rhombus-d1');
+    const rhombusCorner2=getInputElementById('rhombus-d2');
+    const rhombusArea = 0.5 * rhombusCorner1 * rhombusCorner2;
+    console.log(rhombusArea);
+})
+
+// pentagon
+document.getElementById('pentagon-calculate').addEventListener('click',function(){
+    const pentagonP=getInputElementById('pentagon-p');
+    const pentagonB=getInputElementById('pentagon-b');
+    const pentagonArea = 0.5 * pentagonP * pentagonB;
+    console.log(pentagonArea);
+})
