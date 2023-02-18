@@ -24,15 +24,16 @@
     </header>
 
     <main>
-        <section class="w-full flex flex-col md:flex-row mt-8 gap-4 mb-8">
+        <section class="w-full flex flex-col md:flex-row mt-8 gap-2 mb-8">
 
             <!-- Triangle -->
-            <div class="w-full md:w-[75%]  mx-auto grid grid-cols-1 md:grid-cols-3 mt-8 gap-4 mb-8">
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+            <div class="w-full md:w-[75%]  mx-auto grid grid-cols-1 md:grid-cols-3 mt-8 gap-2 mb-8">
+                <div id="triangle-div" class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('triangle-div')">
                     <img class=" mx-auto w-1/2 mb-2 mt-4" src="images/triangle.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Triangle</h1>
+                    <h1 id="triangle" class="text-3xl font-semibold mb-2">Triangle</h1>
                     <p class="text-xl mb-2">Area(A) = 0.5 x b x h</p>
-                    <input id="triangle-bredth" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="b">
+                    <input id="triangle-bredth" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text"
+                        placeholder="b">
                     cm
                     <input id="triangle-height" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" value=""
                         placeholder="h"> cm
@@ -41,11 +42,12 @@
                 </div>
 
                 <!-- Rectangle -->
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+                <div id="rectangle-div" class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('rectangle-div')">
                     <img class=" mx-auto w-1/2 mb-2 mt-4" src="images/rectangle.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Ractangle</h1>
+                    <h1 id="rectangle" class="text-3xl font-semibold mb-2">Ractangle</h1>
                     <p class="text-xl mb-2">Area(A) = w x l</p>
-                    <input id="rectangle-width" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="w">
+                    <input id="rectangle-width" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text"
+                        placeholder="w">
                     cm
                     <input id="rectangle-height" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" value=""
                         placeholder="l"> cm
@@ -55,11 +57,12 @@
 
                 <!-- Parallelogram -->
 
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+                <div id="parallelogram-div" class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('parallelogram-div')">
                     <img class=" mx-auto w-1/2 mb-2 mt-4" src="images/parallelogram.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Parallelogram</h1>
+                    <h1 id="parallelogram" class="text-3xl font-semibold mb-2">Parallelogram</h1>
                     <p class="text-xl mb-2">Area(A) = b x h</p>
-                    <input id="parallelogram-width" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="b">
+                    <input id="parallelogram-width" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text"
+                        placeholder="b">
                     cm
                     <input id="parallelogram-height" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" value=""
                         placeholder="h"> cm
@@ -69,9 +72,9 @@
 
                 <!-- Rhombus -->
 
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+                <div id="rhombus-div"  class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('rhombus-div')">
                     <img class=" mx-auto w-1/2 mb-2 mt-4" src="images/rhombus.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Rhombus</h1>
+                    <h1 id="rhombus" class="text-3xl font-semibold mb-2">Rhombus</h1>
                     <p class="text-xl mb-2">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                     <input id="rhombus-d1" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="d1">
                     cm
@@ -81,9 +84,9 @@
                         class="w-10/12 bg-sky-400 text-white text-xl py-2 mt-4 rounded">Calculate</button>
                 </div>
                 <!-- pentagon -->
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+                <div id="pentagon-div" class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('pentagon-div')">
                     <img class=" mx-auto w-1/2 mb-2 mt-4" src="images/pentagon.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Pentagon</h1>
+                    <h1 id="pentagon" class="text-3xl font-semibold mb-2">Pentagon</h1>
                     <p class="text-xl mb-2">Area(A) = 0.5 x p x b</p>
                     <input id="pentagon-p" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="p">
                     cm
@@ -94,9 +97,9 @@
                 </div>
 
                 <!-- Ellipse -->
-                <div class="text-center w-11/12 mx-auto p-3 border-2 rounded">
+                <div id="ellipse-div" class="text-center w-11/12 mx-auto p-3 border-2 rounded" onmouseover="colorChange('ellipse-div')">
                     <img class=" mx-auto w-1/2 mb-8 mt-4" src="images/ellipse.png" alt="">
-                    <h1 class="text-3xl font-semibold mb-2">Ellipse</h1>
+                    <h1 id="ellipse" class="text-3xl font-semibold mb-2">Ellipse</h1>
                     <p class="text-xl mb-2">Area(A) = π x a x b</p>
                     <input id="ellipse-a" class="w-1/4 mx-2 bg-gray-200 text-xl rounded" type="text" placeholder="a">
                     cm
@@ -108,16 +111,22 @@
 
             </div>
 
-            <div class="w-11/12 md:w-1/4 mx-auto mt-8 gap-4 mb-8">
+            <div class="w-11/12 md:w-1/3 mx-auto mt-8 gap-4 mb-8">
                 <div class="text-center h-3/5 w-full p-3 border-2 rounded">
                     <h1 class="text-3xl"><u>Area Calculation</u></h1>
                     <div>
-                        <table>
-                            <tr>
-                                <th class="">Name</th>
-                                <th>Area</th>
-                                <th>Button</th>
-                            </tr>
+                        <table id="" class="mt-4 w-full">
+                            <thead  class="bg-gray-200 mb-4">
+                                <tr>
+                                    <th class="">No</th>
+                                    <th class="">Name</th>
+                                    <th>Area</th>
+                                    <th>Button</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body" class="text-xl">
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
